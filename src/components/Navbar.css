@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3;
+    margin-bottom: 3;
+}
+.logo{
+    height: 50px;
+    padding: 5px;
+}
+
+.logo-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    align-items: center;
+}
+
+.navbar-menu-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-menu .MuiMenuItem-root {
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+}
+
+.nav-menu .MuiMenuItem-root:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.nav-menu .MuiTypography-root {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+.MuiAppBar-root {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.MuiButton-root {
+    position: relative;
+    overflow: hidden;
+}
+
+.MuiButton-root::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #3b82f6;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.MuiButton-root:hover::after {
+    width: 80%;
+}
+
+/* User menu styling */
+.MuiMenu-paper {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.MuiMenuItem-root {
+    transition: all 0.2s ease;
+}
+
+.MuiMenuItem-root:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.MuiListItemIcon-root {
+    min-width: 36px;
+    color: #3b82f6;
+}
+
+/* Avatar styling */
+.MuiAvatar-root {
+    transition: all 0.3s ease;
+}
+
+.MuiAvatar-root:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* Sign in button styling */
+.MuiButton-contained {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2), 0 2px 4px -1px rgba(59, 130, 246, 0.1);
+}
+
+.MuiButton-contained:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.3), 0 3px 6px -1px rgba(59, 130, 246, 0.2);
+}
+
