@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import PropTypes from "prop-types";
@@ -29,7 +28,7 @@ const SearchBar = () => {
 
   const handleSearch = async () => {
     const response = await axios.get(
-      `https://www.googleapis.com/youtube/v3/search?key=AIzaSyB89T8dNThIGUTNZxGaObbedpzAP5S-Z6k&q=${searchQuery}+therapy+to+cure&part=snippet&maxResults=2`
+      `https://www.googleapis.com/youtube/v3/search?key=${import.meta.env.VITE_YOUTUBE_API_KEY}&q=${searchQuery}+therapy+to+cure&part=snippet&maxResults=2`
     );
     setSearchResults(response.data.items);
   };

@@ -25,8 +25,8 @@ const Dyslexia = () => {
     
     const navigate = useNavigate();
     
-    // Using the Gemini API key
-    const genAI = new GoogleGenerativeAI("AIzaSyBKBPYMggCSiY9JLtwk7PEEO7XCZwBC9Ss");
+    // Using the Gemini API key from environment variables
+    const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
     function parseStringToJson(inputString) {
         // Log the raw input for debugging
