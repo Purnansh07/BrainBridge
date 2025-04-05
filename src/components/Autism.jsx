@@ -70,7 +70,7 @@ const Autism = () => {
             return JSON.parse(cleanedString);
         } catch (error) {
             console.error("Error parsing JSON:", error);
-            
+                
             // If all else fails, create a structured object from the text
             try {
                 // Create a default structure

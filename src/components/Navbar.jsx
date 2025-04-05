@@ -56,7 +56,7 @@ function Navbar() {
                 fontFamily: "Poppins, sans-serif",
               }}
             >
-              NEUROASSIST
+              BRAINBRIDGE
             </Typography>
           </Link>
 
