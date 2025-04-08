@@ -76,7 +76,7 @@ const Footer = () => {
                     <a
                         className="text-neutral-800 dark:text-neutral-400"
                         href="/"
-                    >NeuroAssist</a
+                    >BrainBridge</a
                     >
                 </div>
             </footer>

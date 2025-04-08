@@ -9,7 +9,7 @@ const Chatbot = () => {
     const [messages, setMessages] = useState([
         {
             role: 'assistant',
-            content: 'Hello! I\'m your NeuroAssist AI companion. I can help you with information about neurological disorders, guide you to our services, and answer your questions. How can I assist you today?'
+            content: 'Hello! I\'m your BrainBridge AI companion. I can help you with information about neurological disorders, guide you to our services, and answer your questions. How can I assist you today?'
         }
     ]);
     const [inputMessage, setInputMessage] = useState('');
@@ -38,7 +38,7 @@ const Chatbot = () => {
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
             
             const prompt = `
-You are a helpful AI assistant for NeuroAssist, a website that provides services for neurological disorders.
+You are a helpful AI assistant for BrainBridge, a website that provides services for neurological disorders.
 You can help users with information about:
 - Autism detection and assessment
 - OCD (Obsessive-Compulsive Disorder) detection and assessment
@@ -93,7 +93,7 @@ Keep your response short and to the point. Avoid lengthy explanations.
             ) : (
                 <div className="bg-white rounded-lg shadow-xl w-96 h-[600px] flex flex-col">
                     <div className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
-                        <h3 className="font-semibold">NeuroAssist AI</h3>
+                        <h3 className="font-semibold">BrainBridge AI</h3>
                         <button
                             onClick={() => setIsOpen(false)}
                             className="hover:bg-blue-700 rounded-full p-1"
