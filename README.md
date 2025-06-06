@@ -1,4 +1,4 @@
-# NeuroAssist
+# BrainBridge - https://brain-bridge-tau.vercel.app/
 
 A web application for neurological disorder assessment and support.
 
